@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#924A9A"
+    android:orientation="vertical"
+    tools:context=".TrolleyActivity">
+
+    <!--    LINEAR UTAMA-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--        LINEAR BAR PUTIH-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="30px"
+            android:layout_gravity="center">
+
+            <!--            LINEAR BUAT NAMA DAN WELCOME-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px">
+
+                <TextView
+                    android:id="@+id/welcomemsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Welcome to o-mart"
+                    android:textColor="#000000"
+                    android:textSize="25sp"/>
+            </LinearLayout>
+
+            <!--            LINEAR GAMBAR AJA-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:paddingRight="30px">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/logosnip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        LINEAR BAR PUTIH BARANG-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginBottom="10px"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <!--            LINEAR GAMBAR BARANG-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/minyak" />
+            </LinearLayout>
+
+            <!--            LINEAR BUAT NAMA BARANG-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Minyak Goreng"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Rp 11.000/liter"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+<!--            LINEAR BUAT SIMBOL +- -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:paddingLeft="30px"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="75px"
+                    android:layout_height="75px"
+                    app:srcCompat="@drawable/minustransp"
+                    android:id="@+id/minus"/>
+
+                <ImageView
+                    android:id="@+id/plus"
+                    android:layout_width="75px"
+                    android:layout_height="75px"
+                    app:srcCompat="@drawable/plusttransp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qty"
+                    android:text="0"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        LINEAR BAR PUTIH BARANG-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginBottom="10px"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <!--            LINEAR GAMBAR BARANG-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/beras" />
+            </LinearLayout>
+
+            <!--            LINEAR BUAT NAMA BARANG-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Beras Putih"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Rp 10.500/kg"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <!--            LINEAR BUAT SIMBOL +- -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:paddingLeft="30px"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="75px"
+                    android:layout_height="75px"
+                    app:srcCompat="@drawable/minustransp"
+                    android:id="@+id/minus1"/>
+
+                <ImageView
+                    android:id="@+id/plus1"
+                    android:layout_width="75px"
+                    android:layout_height="75px"
+                    app:srcCompat="@drawable/plusttransp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qty1"
+                    android:text="0"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        LINEAR BAR PUTIH BARANG-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginBottom="10px"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <!--            LINEAR GAMBAR BARANG-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/garam" />
+            </LinearLayout>
+
+            <!--            LINEAR BUAT NAMA BARANG-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Garam Dapur"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Rp 950/100 gr"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <!--            LINEAR BUAT SIMBOL +- -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:paddingLeft="30px"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="75px"
+                    android:layout_height="75px"
+                    app:srcCompat="@drawable/minustransp"
+                    android:id="@+id/minus2"/>
+
+                <ImageView
+                    android:id="@+id/plus2"
+                    android:layout_width="75px"
+                    android:layout_height="75px"
+                    app:srcCompat="@drawable/plusttransp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qty2"
+                    android:text="0"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        LINEAR BAR PUTIH BARANG-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginBottom="10px"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <!--            LINEAR GAMBAR BARANG-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/gula" />
+            </LinearLayout>
+
+            <!--            LINEAR BUAT NAMA BARANG-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Gula Pasir"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Rp 12.500/kg"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <!--            LINEAR BUAT SIMBOL +- -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:paddingLeft="30px"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="75px"
+                    android:layout_height="75px"
+                    app:srcCompat="@drawable/minustransp"
+                    android:id="@+id/minus3"/>
+
+                <ImageView
+                    android:id="@+id/plus3"
+                    android:layout_width="75px"
+                    android:layout_height="75px"
+                    app:srcCompat="@drawable/plusttransp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qty3"
+                    android:text="0"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        LINEAR BAR PUTIH BARANG-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginBottom="10px"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <!--            LINEAR GAMBAR BARANG-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/indomie" />
+            </LinearLayout>
+
+            <!--            LINEAR BUAT NAMA BARANG-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Indomie Goreng"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Rp 2.000/pcs"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <!--            LINEAR BUAT SIMBOL +- -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:paddingLeft="30px"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="75px"
+                    android:layout_height="75px"
+                    app:srcCompat="@drawable/minustransp"
+                    android:id="@+id/minus4"/>
+
+                <ImageView
+                    android:id="@+id/plus4"
+                    android:layout_width="75px"
+                    android:layout_height="75px"
+                    app:srcCompat="@drawable/plusttransp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qty4"
+                    android:text="0"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        LINEAR BAR PUTIH BARANG-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginBottom="10px"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <!--            LINEAR GAMBAR BARANG-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/sunlight" />
+            </LinearLayout>
+
+            <!--            LINEAR BUAT NAMA BARANG-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Sabun Sunlight"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Rp 13.000/pcs"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <!--            LINEAR BUAT SIMBOL +- -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:paddingLeft="30px"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="75px"
+                    android:layout_height="75px"
+                    app:srcCompat="@drawable/minustransp"
+                    android:id="@+id/minus5"/>
+
+                <ImageView
+                    android:id="@+id/plus5"
+                    android:layout_width="75px"
+                    android:layout_height="75px"
+                    app:srcCompat="@drawable/plusttransp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qty5"
+                    android:text="0"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginBottom="10px"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <!--            LINEAR GAMBAR BARANG-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    app:srcCompat="@drawable/logotroli"
+                    android:id="@+id/checkout"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Proses transaksi anda"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:id="@+id/totalbuy"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

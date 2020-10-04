@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="185dp"
+        android:layout_height="107dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/logosnip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/amaranth_bold"
+        android:text="O-Mart"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/boogaloo"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="30px"
+        android:text="Silakan registrasi"
+        android:textColor="#303030"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/boogaloo"
+        android:layout_marginTop="0px"
+        android:layout_marginBottom="30px"
+        android:text="Nama"
+        android:textColor="#303030"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:background="#D6D6D6"
+        android:ems="10"
+        android:id="@+id/usertxt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/boogaloo"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="30px"
+        android:text="Nomor Telepon"
+        android:textColor="#303030"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:background="#D6D6D6"
+        android:ems="10"
+        android:id="@+id/tlp"/>
+
+    <Button
+        android:id="@+id/nextbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="75px"
+        android:background="#CD99E3"
+        android:fontFamily="@font/baumans"
+        android:text="next" />
+
+
+</LinearLayout>
